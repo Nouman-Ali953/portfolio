@@ -1,3 +1,8 @@
+@media only screen and (min-width: 450px) {
+  #special-button {
+    display: none;
+  }
+}
 @media only screen and (max-width: 450px) {
   .main {
     display: flex;
