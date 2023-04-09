@@ -26,7 +26,7 @@
 
 .main {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: white;
   position: relative;
 
@@ -308,6 +308,7 @@
     .buttons {
       position: relative;
       margin-top: 4rem;
+     
 
       input[type="button"] {
         padding: 1.7rem 4rem;
@@ -321,13 +322,20 @@
 
         &:hover {
           cursor: pointer;
+          background-color: #f3bc07;
 
+          transition: .2s ease-in;
         }
       }
+     
+      #btn2{
 
+        position: absolute;
+        top: -.7rem;
+        left: 21rem;
+      }
       #btn2:hover {
         transition: .2s ease-in;
-        background-color: #f3bc07;
       }
 
       #btn1:hover {

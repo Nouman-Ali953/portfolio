@@ -5,6 +5,7 @@
     background-size: cover;
     
     z-index: -2;
+    min-height: 80vh;
     
     nav {
         display: flex;
@@ -155,7 +156,7 @@
 .main::before{
      content: "";
       background-image: url('../images/wp.jpg');
-      background-size: 500px 300px;
+      background-size: 550px 350px;
       background-repeat: no-repeat;
       background-position: center;
       background-position-y: 10% ;
@@ -173,6 +174,7 @@
 
   .section2 {
     display: block;
+    height: 108vh;
     .intro-img {
       width: 100%;
       padding: 4.5rem .6rem;

@@ -16,7 +16,7 @@
 
 .main {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: white;
   position: relative;
 }
@@ -246,10 +246,16 @@
 }
 .main .txt .buttons input[type=button]:hover {
   cursor: pointer;
+  background-color: #f3bc07;
+  transition: 0.2s ease-in;
+}
+.main .txt .buttons #btn2 {
+  position: absolute;
+  top: -0.7rem;
+  left: 21rem;
 }
 .main .txt .buttons #btn2:hover {
   transition: 0.2s ease-in;
-  background-color: #f3bc07;
 }
 .main .txt .buttons #btn1:hover {
   transition: 0.2s ease-in;
