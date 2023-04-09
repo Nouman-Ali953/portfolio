@@ -304,6 +304,22 @@
     height: 5rem;
     margin-top: 3rem;
   }
+  #special-button {
+    border: none;
+    outline: none;
+    padding: 0.6rem;
+    background-color: #f3bc07;
+    box-shadow: 1px 1px 3px black;
+    font-size: 1.4rem;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    bottom: 3.5rem;
+    left: 36%;
+  }
+  #special-button:hover {
+    cursor: pointer;
+  }
 }
 @media only screen and (max-width: 400px) {
   .section2 .sec5-img .swiper {

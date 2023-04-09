@@ -332,6 +332,24 @@
       margin-top: 3rem;
     }
   }
+
+  #special-button{
+    border: none;
+      outline: none;
+      padding: .6rem;
+      background-color: #f3bc07;
+      box-shadow: 1px 1px 3px black;
+      font-size: 1.4rem;
+      color: white;
+      z-index: 3;
+      position: absolute;
+      bottom: 3.5rem;
+      left: 36%;
+      &:hover{
+        cursor: pointer;
+      }
+    
+  }
 }
 
 
