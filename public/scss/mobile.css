@@ -87,6 +87,7 @@
     margin-top: 0px;
   }
   .main .txt .upper-txt p {
+    margin-top: 2rem;
     margin-bottom: -2rem;
     font-size: 1.5rem;
   }
@@ -155,7 +156,7 @@
   }
   .section2 {
     display: block;
-    min-height: 83vh;
+    height: 83vh;
   }
   .section2 .intro-img {
     width: 100%;
