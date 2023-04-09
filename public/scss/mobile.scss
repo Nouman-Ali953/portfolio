@@ -5,7 +5,7 @@
     background-size: cover;
     
     z-index: -2;
-    height: 93.2vh;
+    height: 91.2vh;
     
     nav {
         display: flex;
@@ -94,7 +94,7 @@
           margin-top: 0px;
       }
       .upper-txt p {
-        margin-top: 2rem;
+        margin-top: 3.5rem;
         margin-bottom: -2rem;
         font-size: 1.5rem;
       }
@@ -176,10 +176,10 @@
 
   .section2 {
     display: block;
-    height: 83vh;
+    height: 100vh;
     .intro-img {
       width: 100%;
-      padding: 1.5rem .6rem;
+      padding: 0.5rem .6rem;
       .details
       {
           padding-top: 1rem;
@@ -192,11 +192,16 @@
         } 
     }
     .sec5-img {
-      margin-top: 1rem;
+      margin-top: .1rem;
       width: 100%;
       .swiper {
         padding-top: 0%;
       }
+    }
+    .sec5-img .swiper {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 50px;
     }
     .sec5-img .swiper-slide {
       width: 200px;

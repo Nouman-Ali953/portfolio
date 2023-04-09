@@ -4,7 +4,7 @@
     flex-direction: column;
     background-size: cover;
     z-index: -2;
-    height: 93.2vh;
+    height: 91.2vh;
   }
   .main nav {
     display: flex;
@@ -87,7 +87,7 @@
     margin-top: 0px;
   }
   .main .txt .upper-txt p {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     margin-bottom: -2rem;
     font-size: 1.5rem;
   }
@@ -156,11 +156,11 @@
   }
   .section2 {
     display: block;
-    height: 83vh;
+    height: 100vh;
   }
   .section2 .intro-img {
     width: 100%;
-    padding: 1.5rem 0.6rem;
+    padding: 0.5rem 0.6rem;
   }
   .section2 .intro-img .details {
     padding-top: 1rem;
@@ -171,11 +171,16 @@
     padding-left: 1rem;
   }
   .section2 .sec5-img {
-    margin-top: 1rem;
+    margin-top: 0.1rem;
     width: 100%;
   }
   .section2 .sec5-img .swiper {
     padding-top: 0%;
+  }
+  .section2 .sec5-img .swiper {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 50px;
   }
   .section2 .sec5-img .swiper-slide {
     width: 200px;
