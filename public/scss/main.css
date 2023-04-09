@@ -1,0 +1,709 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.color {
+  background-color: #f3bc07;
+  transition: 0.2s ease-in;
+  box-shadow: 1px 1px 2px gray;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  position: relative;
+}
+.main .links {
+  position: fixed;
+  top: 40%;
+}
+.main .links .f {
+  padding: 1rem;
+  border: 0.5px solid gray;
+  transition: all 0.5s linear;
+  transform: translateX(-1.4rem);
+  width: 5rem;
+  position: relative;
+}
+.main .links .f:hover {
+  transform: translate(0);
+}
+.main .links .f:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.main .links .f a {
+  padding: 2rem;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.main .links ion-icon {
+  padding-left: 0.7rem;
+  font-size: 2.3rem;
+}
+.main .whatsapp {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 5rem;
+  padding: 2rem;
+  border-radius: 50%;
+  z-index: 3;
+}
+.main .whatsapp a {
+  font-size: 2rem;
+  padding: 2rem;
+  position: relative;
+  left: 7.5rem;
+  top: 2px;
+  color: transparent;
+  z-index: 4;
+}
+.main .whatsapp img {
+  width: 7.5rem;
+  filter: drop-shadow(1px 1px 3px black);
+}
+.main .whatsapp img:hover {
+  transition: 0.3s ease;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.main .nav1 {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 2.8rem;
+  background-color: #145219;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .nav1 .fav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .nav1 .fav ion-icon {
+  font-size: 1.5rem;
+  color: white;
+}
+.main .nav1 .fav a {
+  padding-left: 0.4rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
+.main .nav1 .fav:hover ion-icon,
+.main .nav1 .fav:hover a {
+  transition: 0.3s ease;
+  color: #f3bc07;
+}
+.main nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 6.4rem;
+  position: sticky;
+  top: 0%;
+  z-index: 2;
+}
+.main nav h2 {
+  color: black;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px gray;
+}
+.main nav h2:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  transform: scale(1.02);
+  text-shadow: 1px 1px 2px white;
+}
+.main nav ion-icon {
+  display: none;
+}
+.main nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.main nav ul li {
+  padding: 1rem;
+  list-style: none;
+  margin-left: 2rem;
+}
+.main nav ul li a {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+.main .txt {
+  width: 50%;
+  min-height: 50vh;
+  position: absolute;
+  top: 33%;
+  left: 5.7%;
+}
+.main .txt .upper-txt p {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  color: #5b5b5b;
+  padding: 8px 16px;
+  padding-bottom: 0px;
+  border-radius: 50px;
+  letter-spacing: 0.2px;
+  font-size: 1.4rem;
+}
+.main .txt .lower-txt h3 {
+  margin-top: 2rem;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 100;
+  color: #5b5b5b;
+  font-size: 2rem;
+}
+.main .txt .wrapper {
+  display: flex;
+  font-family: "Maven Pro", sans-serif;
+}
+.main .txt .wrapper .static-txt {
+  position: relative;
+  color: black;
+  font-size: 55px;
+  font-weight: 400;
+  font-weight: bold;
+  top: 0rem;
+}
+.main .txt .wrapper .dynamic-txts {
+  margin-left: -2px;
+  height: 70px;
+  line-height: 70px;
+  overflow: hidden;
+}
+.main .txt .dynamic-txts li {
+  list-style: none;
+  color: #f3bc07;
+  font-size: 70px;
+  font-weight: 500;
+  position: relative;
+  font-weight: bold;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.main .txt .dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.main .txt .dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 2px solid #f3bc07;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+.main .txt .buttons {
+  position: relative;
+  margin-top: 4rem;
+}
+.main .txt .buttons input[type=button] {
+  padding: 1.7rem 4rem;
+  font-size: 1.45rem;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+}
+.main .txt .buttons input[type=button]:hover {
+  cursor: pointer;
+}
+.main .txt .buttons #btn2:hover {
+  transition: 0.2s ease-in;
+  background-color: #f3bc07;
+}
+.main .txt .buttons #btn1:hover {
+  transition: 0.2s ease-in;
+  color: #f3bc07;
+}
+.main .txt .buttons a {
+  color: transparent;
+  padding: 0.5rem;
+  font-size: 3rem;
+  position: absolute;
+  left: 1rem;
+  top: 0.3rem;
+}
+.main .images .img1 {
+  position: absolute;
+  top: 11.4rem;
+  right: 0rem;
+  width: 55%;
+  height: 50vh;
+  perspective: 1000px;
+}
+.main .images .img1 img {
+  position: absolute;
+  right: 6%;
+  width: 100%;
+  transform: rotateY(-20deg);
+  filter: drop-shadow(7px 7px 7px #f3bc07);
+}
+.main .images .img2 {
+  border-radius: 30%;
+  position: absolute;
+  top: 14.5rem;
+  right: 4rem;
+  width: 43%;
+  height: 60vh;
+}
+.main .images .img2 img {
+  filter: drop-shadow(2px 2px 2px #666666);
+  position: absolute;
+  top: 0rem;
+  right: 45%;
+  width: 50%;
+  transform: scaleX(-1);
+}
+.main .images .img3 {
+  display: none;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f7f2f2;
+}
+.section2 .intro-img {
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem;
+}
+.section2 .intro-img h2 {
+  margin-top: 0.7rem;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.section2 .intro-img h2 span {
+  color: #f3bc07;
+  font-size: 3rem;
+}
+.section2 .intro-img .details {
+  padding-top: 3.2rem;
+}
+.section2 .intro-img .details h2 {
+  font-size: 2.8rem;
+}
+.section2 .intro-img .details p {
+  font-size: 1.5rem;
+}
+.section2 .intro-img .details p span {
+  color: #0099FF;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.section2 .intro-img .details #calendar {
+  font-size: 1.7rem;
+  color: black;
+  margin-bottom: -2px;
+}
+.section2 .sec5-img {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.section2 .sec5-img .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section2 .sec5-img .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+.section2 .sec5-img .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.my-skills {
+  width: 100%;
+  min-height: 65vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0.5)), url("/Portfolio/images/skills.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.my-skills .container {
+  margin: 0px;
+  padding: 0px;
+  width: 40%;
+}
+.my-skills .container p {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: black;
+}
+.my-skills .container .progress {
+  display: flex;
+  height: 2rem;
+  margin: 0.5rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+.my-skills .container .progress p {
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+.my-skills .container .progress .progress-bar {
+  animation-name: animateBar;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.8s;
+}
+.my-skills .container .progress .progress-bar-success {
+  background-color: red;
+}
+.my-skills .container .progress .progress-bar-info {
+  background-color: rgb(250, 94, 37);
+}
+.my-skills .container .progress .progress-bar-warning {
+  background-color: rgb(253, 166, 180);
+}
+.my-skills .container .progress .progress-bar-danger {
+  background-color: greenyellow;
+}
+.my-skills .container .progress .progress-bar-yes {
+  background-color: #f3bc07;
+}
+@keyframes animateBar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.my-skills .text {
+  width: 40%;
+  height: 80%;
+}
+.my-skills .text p {
+  font-size: 2.4rem;
+  color: #0099FF;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.projects {
+  width: 100%;
+  min-height: 60vh;
+  color: white;
+  position: relative;
+}
+.projects h2,
+.projects #project-heading {
+  margin-top: 2rem;
+  text-align: center;
+  color: black;
+  font-size: 3.3rem;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+.projects #pro-para {
+  text-align: center;
+  font-weight: 100;
+  color: #5b5b5b;
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+  z-index: 88;
+  position: relative;
+}
+.projects .swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: -2.4rem;
+  z-index: 1;
+}
+.projects .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects .swiper-slide #video-btn {
+  display: none;
+}
+.projects .swiper-slide video {
+  width: 25%;
+  height: 70vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 40%;
+}
+.projects .swiper-slide .txt {
+  width: 40%;
+  height: 90%;
+  padding: 0rem 3rem 3rem 3rem;
+  margin-right: 7.3rem;
+}
+.projects .swiper-slide .txt h2 {
+  color: black;
+  font-size: 2.7rem;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+.projects .swiper-slide .txt p {
+  margin-top: 2rem;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 100;
+  color: #5b5b5b;
+  font-size: 2.73rem;
+  line-height: 2.5rem;
+}
+.projects .swiper-slide .txt button {
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  background-color: #f3bc07;
+  box-shadow: 1px 1px 3px black;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  color: white;
+  z-index: 3;
+}
+.projects .swiper-slide .txt button:hover {
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  min-height: 88vh;
+  background-color: #145219;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 2rem;
+}
+footer .contact {
+  width: 25%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+footer .contact h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  margin-top: 4.1%;
+}
+footer .contact p {
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #e4dede;
+}
+footer .contact .cont1 {
+  margin-top: 1rem;
+}
+footer .contact .cont1 h2 {
+  line-height: 4rem;
+  letter-spacing: 0.1rem;
+}
+footer .contact .cont1 .fav {
+  line-height: 4rem;
+  font-size: 1.4rem;
+  text-align: left;
+  padding: 0.3rem;
+}
+footer .contact .cont1 .fav i {
+  border: 0.1px solid white;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  border-radius: 50px;
+}
+footer .contact .cont1 .fav:hover {
+  color: white;
+  transform: translateX(3px);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+footer .form {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+footer .form h2 {
+  font-family: "Maven Pro", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-left: 7.2rem;
+  text-align: left;
+  font-size: 2.2rem;
+  margin-top: 2.5%;
+}
+footer .form form {
+  margin-top: 1.6rem;
+  margin-left: 10%;
+}
+footer .form form input[type=text] {
+  width: 40%;
+}
+footer .form form input {
+  font-family: "Maven Pro", sans-serif;
+  border: 0.5px solid white;
+  width: 83.5%;
+  height: 5rem;
+  margin: 0rem 1rem 1rem 1rem;
+  font-size: 1.73rem;
+  outline: none;
+  background-color: transparent;
+  padding-left: 1.5rem;
+}
+footer .form form input::-moz-placeholder {
+  color: white;
+}
+footer .form form input::placeholder {
+  color: white;
+}
+footer .form form input[type=submit] {
+  outline: none;
+  border: none;
+  width: 10rem;
+  text-align: center;
+  height: 4rem;
+  margin-top: 0.6rem;
+  box-shadow: 2px 2px 3px black;
+  background-color: #f3bc07;
+  font-size: 1.6rem;
+  color: white;
+}
+footer .form form textarea {
+  resize: vertical;
+  outline: none;
+  width: 83.5%;
+  height: 19rem;
+  font-size: 1.73rem;
+  padding-left: 1.5rem;
+  margin-left: 1rem;
+}
+footer .form form textarea::-moz-placeholder {
+  padding: 0%;
+  margin: 0px;
+  color: black;
+}
+footer .form form textarea::placeholder {
+  padding: 0%;
+  margin: 0px;
+  color: black;
+}
+footer .find {
+  width: 25%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+footer .find h2 {
+  font-size: 2.2rem;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.95rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.1rem;
+  margin-top: 5.3%;
+}
+footer .end {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(226, 222, 223, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+footer .end h2 {
+  font-family: "Maven Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+}
+footer .end span:hover {
+  color: #f3bc07;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  transition: 0.3s ease;
+}
+footer .end h2,
+footer .end span {
+  font-size: 1.3rem;
+}
+footer .end h2:hover,
+footer .end span:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

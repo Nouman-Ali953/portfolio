@@ -1,0 +1,328 @@
+@media only screen and (max-width: 450px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    
+    z-index: -2;
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        order: 1;
+        position: relative;
+        background-color: rgba(0,0,0,.1);
+        height: 3.4rem;
+        z-index: 2;
+        
+        ion-icon{
+          display: inline;
+          font-size: 3.5rem;
+          z-index: 3;
+          display: none;
+         }
+        h2{
+            color: black;
+            font-size: 2.3rem;
+            letter-spacing: 1.6px;
+        }
+        ul{
+            display: none;
+            position: absolute;
+            top: 6rem;
+            background-color: #f9d423;
+            width: 100%;
+            padding-left: 0%;
+            box-shadow: 1px 1px 1px black;
+            height: 0px;
+            li{
+              border-bottom: 1px solid gray;
+              margin-left: 0%;
+              text-align: center;
+              transition: .5s ease-in-out;
+            }
+        }
+        
+        
+        
+    }
+    .menu-show{
+            display: block;
+            height: 230px;
+            transition: .5s ease-in-out;
+            
+         }
+    
+    .main-pic-margin{
+      margin-top: 25rem;
+      transition: .5s ease-in-out;
+      
+    }     
+    .nav1 {
+      height: 4rem;
+      display: none;
+      #remove-icons,#remove-icon {
+        display: none;
+      }
+      #main-icon {
+        font-size: 2rem;
+        a {
+          font-size: 2rem;
+          letter-spacing: 0.3rem;
+        }
+      }
+    }
+    .links {
+      display: none;
+    }
+    .whatsapp {
+      display: none;
+    }
+    .images .img2,
+    .img1 {
+      display: none;
+    }
+    .txt {
+      order: 3;
+        position: static;
+        width: 100%;
+        left: 0%;
+        text-align: center;
+        .buttons {
+          margin-top: 0px;
+      }
+      .upper-txt p {
+        margin-bottom: -2rem;
+        font-size: 1.5rem;
+      }
+      .lower-txt h3 {
+       
+        font-size: 1.7rem;
+  
+      }
+      .wrapper {
+        display: block;
+        text-align: center;
+        .dynamic-txts {
+          margin-top: 2rem;
+            margin-left: 0%;
+            ul{
+
+              font-size: 2.2rem;
+            }
+        }
+        .static-txt {
+          top: 4rem;
+          font-size: 2.2rem;
+        }
+        .lower-txt {
+          h3 {
+            margin: 2rem 0.64rem;
+          }
+        }
+      }
+    }
+    #btn1 {
+      margin: 2rem 0rem;
+      box-shadow: 1px 1px 2px gray;
+      padding: 10px;
+    }
+    #btn2 {
+      display: none;
+    }
+    .images {
+      order: 2;
+      padding: 2rem;
+      transition: .5s ease-in-out;
+      .img3 {
+        display: block;
+        margin: auto;
+        height: 213px;
+        width: 213px;
+        background: linear-gradient(#f9d423);
+        // border-radius: 30% 70% 70% 30% / 43% 33% 67% 57%;
+        border-radius: 50%;
+        box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.59);
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+}
+}
+
+.main::before{
+     content: "";
+      background-image: url('../images/wp.jpg');
+      background-size: 500px 300px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 10% ;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+      z-index: -2;
+}
+
+
+
+
+  .section2 {
+    display: block;
+    .intro-img {
+      width: 100%;
+      padding: 4.5rem .6rem;
+      .details
+      {
+          padding-top: 1rem;
+
+          p {
+              font-size: 1.5rem;
+              display: inline-block;
+              padding-left: 1rem;
+            }
+        } 
+    }
+    .sec5-img {
+      margin-top: 2rem;
+      width: 100%;
+      .swiper {
+        padding-top: 0%;
+      }
+    }
+    .sec5-img .swiper-slide {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .my-skills {
+    flex-direction: column;
+    
+    .container {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      order: 2;
+      padding: 1.5rem;
+    }
+    .text {
+      display: block;
+      width: 100%;
+      order: 1;
+      padding: 1.5rem;
+      p{
+
+        font-size: 2rem;
+      }
+    }
+  }
+  .projects {
+    
+    .swiper-slide{
+      position: relative;
+
+      #video-btn{
+        display: block;
+        position: absolute;
+        margin: auto;
+        bottom: 4rem;
+        border: none;
+        outline: none;
+        padding: .6rem;
+        background-color: #f3bc07;
+        box-shadow: 1px 1px 3px black;
+        font-size: 1.4rem;
+        color: white;
+       
+      }
+    } 
+    .swiper-slide video {
+      margin-top: -4rem;
+    }
+    .swiper-slide .txt {
+      display: none;
+    }
+    .swiper-slide video {
+      width: 100%;
+    }
+  }
+  footer {
+    display: block;
+    .contact {
+      width: 100%;
+      display: block;
+      padding: 2rem 0rem 0rem 0rem;
+      h1{
+        font-size: 2.3rem;
+      }
+      p{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        padding: 1rem;
+      }
+      .cont1 {
+        display: inline-grid;
+        margin: 0%;
+        h2{
+          display: none;
+        }
+        .fav{
+
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .form {
+      width: 100%;
+      
+      h2 {
+        margin-left: 1rem;
+        padding: 0%;
+        font-size: 2.2rem;
+      }
+      form {
+        margin-left: 0%;
+        input,
+        input[type="text"] {
+          display: block;
+          width: 90%;
+          margin-top: 2rem;
+        }
+        textarea {
+          margin-top: 2rem;
+          width: 90%;
+        }
+        input[type="submit"] {
+          margin-top: 2rem;
+        }
+      }
+    }
+    .find {
+      width: 100%;
+      iframe {
+        width: 90%;
+        height: 12rem;
+      }
+    }
+    .end {
+      position: static;
+      width: 100%;
+      height: 5rem;
+      margin-top: 3rem;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 400px){
+
+  .section2 .sec5-img .swiper{
+    margin-top: 6rem;
+  }
+
+}
