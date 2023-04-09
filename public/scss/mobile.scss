@@ -5,7 +5,7 @@
     background-size: cover;
     
     z-index: -2;
-    height: 95.4vh;
+    height: 97.4vh;
     
     nav {
         display: flex;
@@ -136,6 +136,7 @@
       order: 2;
       padding: 2rem;
       transition: .5s ease-in-out;
+      margin-top: 2.3rem;
       .img3 {
         display: block;
         margin: auto;
@@ -159,7 +160,7 @@
       background-size: 550px 350px;
       background-repeat: no-repeat;
       background-position: center;
-      background-position-y: 10% ;
+      background-position-y: 20% ;
       position: absolute;
       top: 0px;
       right: 0px;
@@ -190,7 +191,7 @@
         } 
     }
     .sec5-img {
-      margin-top: 2rem;
+      margin-top: 1rem;
       width: 100%;
       .swiper {
         padding-top: 0%;
