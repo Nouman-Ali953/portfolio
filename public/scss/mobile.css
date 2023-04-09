@@ -87,7 +87,7 @@
     margin-top: 0px;
   }
   .main .txt .upper-txt p {
-    margin-top: 3.5rem;
+    margin-top: 4.85rem;
     margin-bottom: -2rem;
     font-size: 1.5rem;
   }
@@ -175,11 +175,11 @@
     width: 100%;
   }
   .section2 .sec5-img .swiper {
+    margin-top: 0.2rem;
     padding-top: 0%;
   }
   .section2 .sec5-img .swiper {
     width: 100%;
-    padding-top: 10px;
     padding-bottom: 50px;
   }
   .section2 .sec5-img .swiper-slide {
