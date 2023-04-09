@@ -99,14 +99,14 @@
     text-align: center;
   }
   .main .txt .wrapper .dynamic-txts {
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-left: 0%;
   }
   .main .txt .wrapper .dynamic-txts ul {
     font-size: 2.2rem;
   }
   .main .txt .wrapper .static-txt {
-    top: 4rem;
+    top: 6rem;
     font-size: 2.2rem;
   }
   .main .txt .wrapper .lower-txt h3 {
@@ -160,6 +160,7 @@
   }
   .section2 .intro-img {
     width: 100%;
+    height: 45vh;
     padding: 0.5rem 0.6rem;
   }
   .section2 .intro-img .details {
