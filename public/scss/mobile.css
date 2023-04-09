@@ -156,7 +156,7 @@
   }
   .section2 {
     display: block;
-    height: 100vh;
+    min-height: 100vh;
   }
   .section2 .intro-img {
     width: 100%;
@@ -180,6 +180,7 @@
   }
   .section2 .sec5-img .swiper {
     width: 100%;
+    margin-top: 5.7rem;
     padding-bottom: 50px;
   }
   .section2 .sec5-img .swiper-slide {
@@ -213,7 +214,7 @@
     display: block;
     position: absolute;
     margin: auto;
-    bottom: 4rem;
+    bottom: 5.5rem;
     border: none;
     outline: none;
     padding: 0.6rem;
